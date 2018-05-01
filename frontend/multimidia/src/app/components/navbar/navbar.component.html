@@ -1,0 +1,7 @@
+<mz-navbar navbarClass="{{classe}}">
+  <mz-navbar-item-container [align]="alinhamento">
+  <mz-navbar-item *ngFor="let item of itemMenu">
+      <a routerLink="{{item.router}}">{{item.nome}}</a>
+  </mz-navbar-item>
+  </mz-navbar-item-container>
+</mz-navbar>
