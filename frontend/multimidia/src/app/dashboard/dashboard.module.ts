@@ -4,7 +4,7 @@ import { DashboardComponent } from './dashboard.component';
 import { DashboardRoutingModule } from './/dashboard-routing.module';
 import { NavbarComponent } from '../components/navbar/navbar.component';
 
-import { MzNavbarModule, MzCollectionModule } from 'ng2-materialize';
+import { MzNavbarModule, MzCollectionModule, MzIconModule, MzIconMdiModule } from 'ng2-materialize';
 import { CollectionComponent } from '../components/collection/collection.component'
 
 @NgModule({
@@ -13,11 +13,14 @@ import { CollectionComponent } from '../components/collection/collection.compone
     DashboardRoutingModule,
     
     MzNavbarModule,
-    MzCollectionModule
+    MzCollectionModule,
+    MzIconModule,
+    MzIconMdiModule
   ],
   declarations: [
     DashboardComponent, 
-    NavbarComponent, CollectionComponent
+    NavbarComponent,
+    CollectionComponent
   ]
 })
 export class DashboardModule { }

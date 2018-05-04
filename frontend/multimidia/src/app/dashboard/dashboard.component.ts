@@ -12,23 +12,101 @@ export class DashboardComponent implements OnInit {
   ngOnInit() {
   }
 
+  color_text : string = 'green-text text-darken-4';
+
+  itemMenu = [
+    {
+      nome: 'Item 1',
+      router: ['#']
+    },
+    {
+      nome: 'Item 2',
+      router: ['#']
+    },
+    {
+      nome: 'Item 3',
+      router: ['#']
+    }
+  ]
+
   itens : any[] = [
-    "item 1",
-    "item 2",
-    "item 3",
-    "item 4",
-    "item 5",
-    "item 6",
-    "item 7",
+    {
+      content:"Umuarama", 
+      classContent: this.color_text,
+      secondaryContent: "send", 
+      classSecondaryContent: this.color_text,
+      router: ['/']
+    },
+    {
+      content:"Paris", 
+      classContent:this.color_text, 
+      secondaryContent: "send", 
+      classSecondaryContent: this.color_text, 
+      router: ['/']
+    },
+    {
+      content:"Piracuama", 
+      classContent:this.color_text,
+      secondaryContent: "send", 
+      classSecondaryContent: this.color_text
+    },
+    {
+      content:"Pirajussara", 
+      classContent:this.color_text,
+      secondaryContent: "send", 
+      classSecondaryContent: this.color_text
+    },
+    {
+      content:"Valo Verde", 
+      classContent:this.color_text,
+      secondaryContent: "send", 
+      classSecondaryContent: this.color_text
+    },
+    {
+      content:"Vale das Virtudes", 
+      classContent:this.color_text,
+      secondaryContent: "send", 
+      classSecondaryContent: this.color_text
+    },
+    {
+      content:"Novo Oriente", 
+      classContent:this.color_text,
+      secondaryContent: "send", 
+      classSecondaryContent: this.color_text
+    },
+    {
+      content:"Novo Campo Limpo", 
+      classContent:this.color_text,
+      secondaryContent: "send", 
+      classSecondaryContent: this.color_text
+    },
+    {
+      content:"Jardim das Oliveiras", 
+      classContent:this.color_text,
+      secondaryContent: "send", 
+      classSecondaryContent: this.color_text
+    },
+    {
+      content:"Ipê", 
+      classContent:this.color_text,
+      secondaryContent: "send", 
+      classSecondaryContent: this.color_text
+    },
+    {
+      content:"Mitsutani", 
+      classContent:this.color_text,
+      secondaryContent: "send", 
+      classSecondaryContent: this.color_text
+    }
   ]
 
   itens2 : any[] = [
-    "item 12",
-    "item 22",
-    "item 33",
-    "item 44",
-    "item 55",
-    "item 65",
-    "item 76",
+    {content:"item 12"},
+    {content:"item 22"},
+    {content:"item 33"},
+    {content:"item 44"},
+    {content:"item 55"},
+    {content:"item 65"},
+    {content:"item 76"},
   ]
 }

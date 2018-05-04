@@ -15,6 +15,9 @@ export class NavbarComponent implements OnInit {
   @Input() classe: String = "";
   @Input() alinhamento: String = "right";
 
+  @Input() itemMenu = [];
+
+  /*
   itemMenu = [
     {
       nome: 'Item 1',
@@ -29,4 +32,5 @@ export class NavbarComponent implements OnInit {
       router: ['#']
     }
   ]
+  */
 }

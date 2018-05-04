@@ -1,4 +1,18 @@
 <mz-collection>
   <mz-collection-header [hidden]="nomeCollection == null"><h4>{{nomeCollection}}</h4></mz-collection-header>
-  <mz-collection-item *ngFor="let item of itensCollenction">{{item}}</mz-collection-item>
+  <mz-collection-item *ngFor="let item of itemsCollenction">
+    <span class="{{item.classContent}}">
+        {{item.content}}
+    </span>
+    <div mz-secondary-content class="valign-wrapper" *ngIf="!iconCollection">
+      <span class="{{item.classSecondaryContent}}">
+        {{item.secondaryContent}}
+      </span>
+    </div>
+
+    <div mz-secondary-content  class="valign-wrapper" *ngIf="iconCollection">
+      <a routerLink="{{item.router}}"><i mz-icon class="{{item.classSecondaryContent}}" [icon]="item.secondaryContent"></i></a>
+    </div>
+  </mz-collection-item>
+  
 </mz-collection>
